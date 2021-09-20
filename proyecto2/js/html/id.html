@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ejemplo DOM con java</title>
+</head>
+<body>
+    <h1 id='cabecero'>HOLA MUNDO</h1>
+    <p id='parrafo'> siempre </p>
+    <h1 id ='resumen'>RESUMEN VIEJO</h1>
+    <script>
+        let resumen= document.getElementById('resumen');// en este caso se utiliza para midificar una etiqueta ya incluida
+        console.log('valor del resumen: $ {resumen.innerHTML}');
+        resumen.innerHTML='nuevo valor';
+
+        let parrafo= document.getElementById('parrafo').innerHTML;// innerHtm propiedad para recuperar el contenido del elemento
+        console.log('valor del parrafo: $ {parrafo.innerHTML}');
+        
+        let cabecero= document.getElementById('cabecero').innerHTML; // document es para acceder a las propiedades del documento
+        console.log('saludos desde html'+cabecero);//getElementById metodo mas comun para haceder al dom
+      
+    </script>
+    
+</body>
+</html>
